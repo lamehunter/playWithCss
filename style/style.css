@@ -1,24 +1,36 @@
 body{
     margin: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    color: black;    
+    color: black;  
+}
+
+iframe{
+    border-style: none;
+    width: 100%;
+    height: 100%;
 }
 
 p{
-    color: blue; 
+    color: white; 
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
 }
 
 .container{
     display: grid;
     grid-template-areas: "headerC headerC"
-    "sideC mainC"
-    "footerC footerC";    
+                         "sideC mainC"
+                         "footerC footerC";    
 
-    grid-template-rows: 150px auto 150px;
-    grid-template-columns: 100px auto;
+    grid-template-rows: 100px auto 50px;
+    grid-template-columns: 170px auto;
     
-    grid-gap: 10px;    
+    grid-gap: 10px; 
+    height: calc(100vh - 20px);   
 }
 
 .headerC{
@@ -31,19 +43,19 @@ p{
     font-size: 50px; 
     color: black;
 
-    background-color: aqua; 
-    border-radius: 15px;   
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(4, 0, 255, 0.589));
+    border-radius: 7px;  
 }
 
 .sideC{
     grid-area: sideC;
 
     display: flex;
-    align-items: center;
     justify-content: center;
-    
-    border-radius: 15px;
-    background-color: rebeccapurple;
+    align-items: center;
+
+    border-radius: 7px;  
+    background-color: rgba(4, 0, 255, 0.589);
 }
 
 .mainC{
@@ -53,8 +65,8 @@ p{
     align-items: center;
     justify-content: center;
     
-    border-radius: 15px;
-    background-color: aqua;
+    border-radius: 7px;  
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(4, 0, 255, 0.589));
 }
 
 .footerC{
@@ -62,8 +74,8 @@ p{
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     
-    border-radius: 15px;    
-    background-color: aqua;
+    border-radius: 7px;    
+    background: linear-gradient(to left, rgba(255,0,0,0), rgba(4, 0, 255, 0.589));
 }
