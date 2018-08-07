@@ -1,5 +1,69 @@
-.class1{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    color: red;    
+body{
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: black;    
+}
+
+p{
+    color: blue; 
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "headerC headerC"
+    "sideC mainC"
+    "footerC footerC";    
+
+    grid-template-rows: 150px auto 150px;
+    grid-template-columns: 100px auto;
+    
+    grid-gap: 10px;    
+}
+
+.headerC{
+    grid-area: headerC;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    
+    font-size: 50px; 
+    color: black;
+
+    background-color: aqua; 
+    border-radius: 15px;   
+}
+
+.sideC{
+    grid-area: sideC;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 15px;
+    background-color: rebeccapurple;
+}
+
+.mainC{
+    grid-area: mainC;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 15px;
+    background-color: aqua;
+}
+
+.footerC{
+    grid-area: footerC;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 15px;    
+    background-color: aqua;
 }
